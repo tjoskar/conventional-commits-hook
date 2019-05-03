@@ -13,12 +13,12 @@ const prepareCommitMsgFileName = 'prepare-commit-msg';
 
 const gitmojiCommitHookComand = `#!/bin/sh
 exec < /dev/tty
-gitmoji-commit-hook $1
+conventional-commits-hook $1
 `;
 
 const errorMessage = {
   notGit: 'The directory is not a git repository.',
-  commitHookExist: `A prepare-commit hook already exists, please remove the hook (rm .git/hooks/${prepareCommitMsgFileName}) or install gitmoji-commit-hook manually by adding the following content info .git/hooks/\n\n${prepareCommitMsgFileName}:${gitmojiCommitHookComand}`,
+  commitHookExist: `A prepare-commit hook already exists, please remove the hook (rm .git/hooks/${prepareCommitMsgFileName}) or install conventional-commits-hook manually by adding the following content info .git/hooks/\n\n${prepareCommitMsgFileName}:${gitmojiCommitHookComand}`,
   gitmojiParse: 'Could not find gitmojis at url'
 };
 
@@ -49,7 +49,7 @@ function initProject(gitHookPath) {
 }
 
 function printInitSuccess() {
-  console.log(`${chalk.green('🎉  SUCCESS 🎉')}  gitmoji-commit-hook initialized with success.`);
+  console.log(`${chalk.green('🎉  SUCCESS 🎉')}  conventional-commits-hook initialized with success.`);
 }
 
 function prependMessage(getMessage, putMessage) {
