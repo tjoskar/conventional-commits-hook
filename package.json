@@ -1,8 +1,11 @@
 {
   "name": "conventional-commits-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "bin/index.js",
+  "bin": {
+    "gitmoji-commit-hook": "./bin/index.js"
+  },
   "scripts": {
     "test": "echo \"There is no test!\" && exit 1",
     "lint": "eslint ."
