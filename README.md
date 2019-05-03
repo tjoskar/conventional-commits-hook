@@ -31,6 +31,10 @@ node invoke.js --init # run the init setup
 node invoke.js mock_hooks/COMMIT_EDITMSG # simulate a git commit
 ```
 
+## Related
+
+[gitmoji-commit-hook](https://github.com/tjoskar/gitmoji-commit-hook)
+
 ## License
 
 The code is available under the [WTFPL](http://www.wtfpl.net/about/) license.
