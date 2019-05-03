@@ -1,0 +1,21 @@
+{
+  "name": "conventional-commits-hook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"There is no test!\" && exit 1",
+    "lint": "eslint ."
+  },
+  "author": "Oskar Karlsson <kontakta@oskarkarlsson.nu>",
+  "license": "WTFPL",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "file-exists": "^5.0.1",
+    "path-exists": "^4.0.0",
+    "prompts": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
