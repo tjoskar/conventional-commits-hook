@@ -54,7 +54,7 @@ function printInitSuccess() {
 
 function prependMessage(getMessage, putMessage) {
   return filepath => message => getMessage(filepath)
-    .then(fileContent => `${message}${fileContent}`)
+    .then(fileContent => `${message || ''}${fileContent}`)
     .then(fileContent => putMessage(filepath, fileContent));
 }
 
