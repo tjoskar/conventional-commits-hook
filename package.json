@@ -13,7 +13,7 @@
   "author": "Oskar Karlsson <kontakta@oskarkarlsson.nu>",
   "license": "WTFPL",
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^4.0.0",
     "file-exists": "^5.0.1",
     "path-exists": "^4.0.0",
     "prompts": "^2.0.4"
