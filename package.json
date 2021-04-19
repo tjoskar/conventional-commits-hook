@@ -16,7 +16,7 @@
     "chalk": "^4.0.0",
     "file-exists": "^5.0.1",
     "path-exists": "^4.0.0",
-    "prompts": "^2.0.4"
+    "prompts": "^2.4.1"
   },
   "devDependencies": {
     "eslint": "7.22.0"
