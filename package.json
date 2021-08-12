@@ -15,7 +15,7 @@
   "dependencies": {
     "chalk": "^4.0.0",
     "file-exists": "^5.0.1",
-    "path-exists": "^4.0.0",
+    "path-exists": "^5.0.0",
     "prompts": "^2.0.4"
   },
   "devDependencies": {
