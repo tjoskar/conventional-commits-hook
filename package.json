@@ -3,22 +3,34 @@
   "version": "1.0.2",
   "description": "",
   "main": "bin/index.js",
+  "type": "module",
   "bin": {
     "conventional-commits-hook": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"There is no test!\" && exit 1",
-    "lint": "eslint ."
+    "lint": "xo"
   },
-  "author": "Oskar Karlsson <kontakta@oskarkarlsson.nu>",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "tjoskar <hello@tjoskar.dev>",
   "license": "WTFPL",
   "dependencies": {
-    "chalk": "^4.0.0",
-    "file-exists": "^5.0.1",
-    "path-exists": "^4.0.0",
-    "prompts": "^2.0.4"
+    "chalk": "5.0.1",
+    "file-exists": "5.0.1",
+    "path-exists": "5.0.0",
+    "prompts": "2.4.2"
   },
   "devDependencies": {
-    "eslint": "7.31.0"
+    "xo": "0.50.0"
+  },
+  "volta": {
+    "node": "16.13.1"
+  },
+  "xo": {
+    "rules": {
+      "unicorn/no-process-exit": "off"
+    }
   }
 }

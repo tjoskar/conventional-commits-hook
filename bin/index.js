@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-'use strict';
-
-const { conventionalCommitsHook } = require('./lib');
+import process from 'node:process';
+import {conventionalCommitsHook} from './lib.js';
 
 conventionalCommitsHook(`${process.env.PWD}/.git/hooks`, process.argv[2]);
