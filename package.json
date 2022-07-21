@@ -23,7 +23,7 @@
     "prompts": "2.4.2"
   },
   "devDependencies": {
-    "xo": "0.50.0"
+    "xo": "0.51.0"
   },
   "volta": {
     "node": "16.16.0"
